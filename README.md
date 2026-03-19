@@ -25,7 +25,10 @@ HOUSING MARKET PRICING ANALYSIS/
 │
 ├── data/
 │   └── kc_house_data.csv     # Dataset
-│
+│── tableau/
+│   ├── tableau_dashboard.twbx
+│   ├── visualization_full.pdf
+│   └── dashboard_preview.png
 ├── housing_venv/             # Virtual environment (not tracked)
 ├── housing_analysis.ipynb    # Main analysis notebook
 ├── .gitignore                # Ignored files
