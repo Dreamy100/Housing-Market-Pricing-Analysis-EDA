@@ -55,6 +55,34 @@ HOUSING MARKET PRICING ANALYSIS/
 ```
 
 ---
+## How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Dreamy100/Housing-Market-Pricing-Analysis-EDA.git
+cd housing-market-pricing-analysis
+```
+
+2. Create and activate virtual environment:
+
+```bash
+python -m venv housing_venv
+source housing_venv/bin/activate   # Mac/Linux
+housing_venv\Scripts\activate      # Windows
+```
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the notebook:
+
+```bash
+jupyter notebook housing_analysis.ipynb
+```
 
 ## Dataset
 
@@ -239,34 +267,7 @@ The project includes:
 
 ---
 
-## How to Run
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/housing-market-pricing-analysis.git
-cd housing-market-pricing-analysis
-```
-
-2. Create and activate virtual environment:
-
-```bash
-python -m venv housing_venv
-source housing_venv/bin/activate   # Mac/Linux
-housing_venv\Scripts\activate      # Windows
-```
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Run the notebook:
-
-```bash
-jupyter notebook housing_analysis.ipynb
-```
 
 ---
 
