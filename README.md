@@ -15,6 +15,7 @@ The analysis is conducted using Python in a notebook-based workflow, combining d
 * Analyze how features like size, location, and condition affect pricing
 * Detect patterns and anomalies in the housing market
 * Build a structured analytical workflow for real-world data problems
+* Build a detailed Tableau Dashboard showcasing key business insights
 
 ---
 
@@ -24,19 +25,33 @@ The analysis is conducted using Python in a notebook-based workflow, combining d
 HOUSING MARKET PRICING ANALYSIS/
 │
 ├── data/
-│   └── kc_house_data.csv     # Dataset
+│   └── kc_house_data.csv                # Dataset
 |
-│── tableau/
+│── analysis_images/                     # EDA Analysis Visualization Images
+│   ├── average_price_per_month.png
+│   ├── bathrooms_vs_price.png   
+|   ├── bedrooms_vs_price.png
+│   ├── condition_price.png
+|   ├── correlation_analysis.png
+│   ├── distribution_of_house_prices.png
+|   ├── geographic_distribution.png
+│   ├── grade_vs_price.png
+|   ├── house_age_vs_price.png
+│   ├── living_area_vs_price.png
+|   ├── view_rating_vs_price.png    
+│   └── zipcode_comparison.png
+|
+│── tableau/                            # Tableau Visualizations
 │   ├── tableau_dashboard.twbx
-│   ├── visualization_full.pdf    # Tableau Visualizations
+│   ├── visualization_full.pdf    
 │   └── dashboard_preview.png
 |
-├── housing_venv/             # Virtual environment (not tracked)
-├── housing_analysis.ipynb    # Main analysis notebook
-├── .gitignore                # Ignored files
-├── requirements.txt          # Dependencies
-├── README.md                 # Project documentation
-├── LICENSE                   # License
+├── housing_venv/                       # Virtual environment (not tracked)
+├── housing_analysis.ipynb              # Main analysis notebook
+├── .gitignore                          # Ignored files
+├── requirements.txt                    # Dependencies
+├── README.md                           # Project documentation
+├── LICENSE                             # License
 ```
 
 ---
@@ -86,66 +101,101 @@ The dataset contains housing sales data with features such as:
 
 ---
 
+## Tableau Dashboard Visualization Overview
+
+The Tableau dashboard provides a clear and interactive visual summary of the housing market pricing analysis. It highlights key trends, patterns, and relationships within the dataset, enabling quick insights into how different factors influence house prices.
+
+The visualization focuses on important aspects such as price distribution, location-based variations, and the impact of property features like size, condition, and amenities. Through intuitive charts and clean design, the dashboard makes it easy to explore the data and identify meaningful patterns without diving into raw datasets.
+
+Overall, this dashboard serves as a powerful tool for understanding market behavior and supports data-driven decision-making.
+
+![Dashboard](tableau/dashboard_preview.png)
+---
+
 ## Exploratory Data Analysis
 
 ### 1. Price Distribution
-- Right-skewed distribution with luxury outliers inflating average prices  
-
+- Right-skewed distribution with luxury outliers inflating average prices
 ---
 
 ### 2. Key Price Drivers
 
 - **Living Area (sqft_living):** Strongest driver; larger homes command higher prices  
 - **Bedrooms:** Price increases initially, then shows diminishing returns  
-- **Bathrooms:** Stronger impact than bedrooms, reflecting comfort/luxury value  
-
+- **Bathrooms:** Stronger impact than bedrooms, reflecting comfort/luxury value
 ---
 
 ### 3. Property Quality
 
 - **Grade:** Major price driver; higher construction quality significantly increases value  
-- **Condition:** Impacts price but less than grade  
-
+- **Condition:** Impacts price but less than grade
 ---
 
 ### 4. Premium Features
 
 - **Waterfront:** Significant price premium  
-- **View:** Higher ratings correlate with higher prices  
-
+- **View:** Higher ratings correlate with higher prices
 ---
 
 ### 5. Geographic Analysis
 
 - **Zipcodes:** High-value properties concentrated in specific regions  
-- **Spatial Patterns:** Clear clustering of expensive homes (lat-long analysis)  
-
+- **Spatial Patterns:** Clear clustering of expensive homes (lat-long analysis)
 ---
 
 ### 6. Price per Square Foot
-- Key benchmarking metric; varies significantly across locations  
-
+- Key benchmarking metric; varies significantly across locations
 ---
 
 ### 7. Property Age
-- Newer homes priced higher; older homes show greater variability  
-
+- Newer homes priced higher; older homes show greater variability 
 ---
 
 ### 8. Market Segmentation
-- Segmented into Low / Mid / High tiers to analyze distribution  
-
+- Segmented into Low / Mid / High tiers to analyze distribution
 ---
 
 ### 9. Cross Analysis (Bedrooms × Grade)
-- Bedroom impact depends on grade; high-grade homes outperform across levels  
-
+- Bedroom impact depends on grade; high-grade homes outperform across levels 
 ---
 
 ### 10. Market Trends
 - Moderate seasonal variation in monthly pricing  
 ---
 
+## Key EDA Analysis Visualizations:
+---
+### Price Distribution
+
+![Dashboard](analysis_images/distribution_of_house_prices.png)
+---
+---
+### Price by Location
+
+![Dashboard](analysis_images/geographic_distribution_price.png)
+---
+---
+### Price vs Living Area
+
+![Dashboard](analysis_images/living_area_vs_price.png)
+---
+---
+### Price vs Bathrooms
+
+![Dashboard](analysis_images/bathrooms_vs_price.png)
+---
+---
+### Price vs Condition
+
+![Dashboard](analysis_images/condition_price.png)
+---
+---
+### Correlation Analysis Heatmap
+
+![Dashboard](analysis_images/correlation_analysis.png)
+---
+
+---
 ## Key Insights
 
 * **Living area (sqft) is one of the strongest predictors of price**
