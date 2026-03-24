@@ -60,7 +60,7 @@ HOUSING MARKET PRICING ANALYSIS/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Dreamy100/Housing-Market-Pricing-Analysis-EDA.git
+git clone https://github.com/WizardNox/Housing-Market-Pricing-Analysis-EDA.git
 cd housing-market-pricing-analysis
 ```
 
